@@ -1,7 +1,16 @@
-def comb(L):
-    for i in range(3):
-        for j in range(3):
-            for k in range(3):
-                if (i!=j and j!=k and i!=k):
-                    print(L[i], L[j], L[k])
-comb([1,4,5,6])
+n=int(input("Enter a number:"))
+if(n>0 and n<=999):
+    a=int(n/100)
+    b=int(n%100)
+    c=int(b/10)
+    d=int(b%10)
+    print(a,c,d)
+    print(d,c,a)
+    print(c,d,a)
+    print(c,a,d)
+    print(d,a,c)
+    print(a,d,c)
+if(n<0):
+    print("POSITIVE NUMBER REQUIRED!")
+if(n>=1000):
+    print("ENTERED NUMBER IS BIGGER THAN EXPECTED!")
